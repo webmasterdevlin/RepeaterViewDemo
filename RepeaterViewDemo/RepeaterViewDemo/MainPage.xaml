@@ -5,6 +5,7 @@
              x:Class="RepeaterViewDemo.MainPage"
              Padding="5">
     <ScrollView>
+
         <StackLayout>
             <Label Text="Students" FontSize="Large" />
             <repeaterViewDemo:RepeaterView ItemsSource="{Binding Students}">
@@ -23,6 +24,7 @@
                     </DataTemplate>
                 </repeaterViewDemo:RepeaterView.ItemTemplate>
             </repeaterViewDemo:RepeaterView>
+
             <Label Text="Employees" FontSize="Large" />
             <repeaterViewDemo:RepeaterView ItemsSource="{Binding Employees}">
                 <repeaterViewDemo:RepeaterView.ItemTemplate>
@@ -40,6 +42,8 @@
                     </DataTemplate>
                 </repeaterViewDemo:RepeaterView.ItemTemplate>
             </repeaterViewDemo:RepeaterView>
+
         </StackLayout>
+
     </ScrollView>
 </ContentPage>
